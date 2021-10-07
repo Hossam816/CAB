@@ -1,0 +1,84 @@
+.use {
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  .use p:first-child {
+    color: var(--main-color);
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center; }
+  .use h1 {
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center;
+    padding-bottom: 60px; }
+  .use .use-container {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center; }
+    .use .use-container .use-text {
+      flex: 1; }
+      .use .use-container .use-text h4 {
+        font-size: 27px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        letter-spacing: 2.5px;
+        line-height: 1.2em; }
+      .use .use-container .use-text p {
+        color: #666;
+        line-height: 1.7em; }
+      .use .use-container .use-text .btn-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px; }
+      .use .use-container .use-text .btn-google {
+        background-color: #000;
+        padding: 10px 20px;
+        text-align: center;
+        border-radius: 30px;
+        display: flex;
+        color: #fff;
+        justify-items: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all .25s ease; }
+        .use .use-container .use-text .btn-google .btn-text {
+          margin-left: 10px; }
+          .use .use-container .use-text .btn-google .btn-text span {
+            display: block;
+            letter-spacing: 1.7px;
+            font-size: 12px;
+            margin: 2px 0px; }
+          .use .use-container .use-text .btn-google .btn-text h5 {
+            font-size: 15px; }
+      .use .use-container .use-text .btn-apple {
+        background-color: #000;
+        padding: 10px 20px;
+        border-radius: 30px;
+        display: flex;
+        color: #fff;
+        justify-items: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all .25s ease;
+        margin-left: 20px; }
+        .use .use-container .use-text .btn-apple .app-text {
+          margin-left: 20px; }
+          .use .use-container .use-text .btn-apple .app-text span {
+            display: block;
+            letter-spacing: 1.7px;
+            font-size: 12px;
+            margin: 2px 0px; }
+          .use .use-container .use-text .btn-apple .app-text h5 {
+            font-size: 15px; }
+    .use .use-container .img-container {
+      flex: 1;
+      text-align: center; }
+
+.btn-google:hover,
+.btn-apple:hover {
+  background-color: #fff !important;
+  color: #000 !important; }
+
+/*# sourceMappingURL=use.css.map */

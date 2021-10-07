@@ -1,0 +1,72 @@
+.about {
+  background-color: var(--main-color);
+  padding-top: 100px;
+  padding-bottom: 50px;
+  width: 100%; }
+  .about .about-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+    justify-items: center; }
+    .about .about-container .about-text {
+      padding-right: 20px;
+      width: 80%; }
+      .about .about-container .about-text h2 {
+        font-weight: bold;
+        margin-bottom: 10px; }
+      .about .about-container .about-text h1 {
+        font-weight: bold;
+        font-size: 35px;
+        margin: 20px 0px; }
+      .about .about-container .about-text p {
+        line-height: 25px;
+        margin-bottom: 15px; }
+    .about .about-container .form-container {
+      width: 50%;
+      background-color: #fff; }
+      .about .about-container .form-container label {
+        display: block;
+        background-color: #000;
+        color: #fff;
+        width: 100%;
+        padding: 10px; }
+        .about .about-container .form-container label span {
+          color: var(--main-color); }
+      .about .about-container .form-container .inp-container {
+        padding: 20px 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-gap: 30px; }
+        .about .about-container .form-container .inp-container input {
+          color: #000;
+          border-width: 0px 0px 1px 0px;
+          border-color: #000;
+          border-style: solid;
+          outline: none;
+          padding: 5px; }
+      .about .about-container .form-container select {
+        width: 86%;
+        padding: 5px;
+        border-width: 0px 0px 1px 0px;
+        border-color: #000;
+        border-style: solid;
+        margin: 0px 20px;
+        outline: none;
+        position: relative; }
+      .about .about-container .form-container .btn-submit {
+        width: 85%;
+        margin: 30px 20px;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+        background-color: #000;
+        transition: all .25s linear;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold; }
+      .about .about-container .form-container .btn-submit:hover {
+        background-color: var(--main-color);
+        color: #000; }
+
+/*# sourceMappingURL=about.css.map */

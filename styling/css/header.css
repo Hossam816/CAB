@@ -1,0 +1,88 @@
+header {
+  background-image: url("../../img/cars_police_lights_143815_1920x1080.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 80vh; }
+  header .header-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.425);
+    z-index: 1;
+    width: 100%;
+    height: 100%; }
+  header .nav-container {
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    padding: 10px;
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 30px;
+    transition: all .9s ease; }
+    header .nav-container .brand-container {
+      width: 300px;
+      padding: 15px;
+      color: #fff;
+      margin-left: 50px; }
+      header .nav-container .brand-container .h-brand {
+        color: #fff; }
+        header .nav-container .brand-container .h-brand span {
+          color: var(--main-color); }
+      header .nav-container .brand-container p {
+        letter-spacing: 2.5px;
+        font-size: 12px; }
+    header .nav-container .ul-container {
+      width: 100%;
+      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      header .nav-container .ul-container ul {
+        width: 100%;
+        padding-left: 0;
+        list-style: none;
+        font-size: 15px; }
+        header .nav-container .ul-container ul li {
+          display: inline-block;
+          margin-left: 15px;
+          cursor: pointer; }
+          header .nav-container .ul-container ul li a {
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            transition: all .25s ease; }
+          header .nav-container .ul-container ul li a:hover {
+            background-color: var(--main-color);
+            color: #000; }
+  header .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    text-align: center; }
+    header .header-text p:first-child {
+      letter-spacing: 2.5px;
+      color: var(--main-color);
+      font-size: 35px; }
+    header .header-text p:nth-child(2) {
+      font-size: 65px;
+      color: #fff; }
+    header .header-text p:nth-child(3) {
+      letter-spacing: 4.5px;
+      font-size: 25px;
+      color: #fff; }
+  header img {
+    position: absolute;
+    bottom: -5%;
+    z-index: 5;
+    left: 50%;
+    transform: translate(-50%, 12%);
+    width: 30%;
+    pointer-events: none; }
+
+/*# sourceMappingURL=header.css.map */

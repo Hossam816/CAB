@@ -1,0 +1,78 @@
+.testimonials {
+  background-image: url("../../img/testimonials-background-1920x1080.png");
+  background-position: center;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative; }
+  .testimonials .overlay-testi {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(110, 110, 110, 0.425);
+    z-index: 1;
+    width: 100%;
+    height: 100%; }
+  .testimonials .testi-p {
+    color: var(--main-color);
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    z-index: 55; }
+  .testimonials h1 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 55; }
+  .testimonials .testi-container {
+    position: relative;
+    z-index: 8;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    color: #fff; }
+    .testimonials .testi-container .opinion {
+      background-color: #000;
+      margin: 0px 20px;
+      padding: 25px;
+      border-radius: 15px;
+      flex: 1; }
+      .testimonials .testi-container .opinion p {
+        margin-bottom: 20px;
+        line-height: 1.7em; }
+      .testimonials .testi-container .opinion .cleint-info {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center; }
+        .testimonials .testi-container .opinion .cleint-info .tex-info {
+          margin-left: 15px; }
+          .testimonials .testi-container .opinion .cleint-info .tex-info h2 {
+            color: var(--main-color); }
+
+.a::after {
+  content: "";
+  position: absolute;
+  border-width: 60px 60px 60px 60px;
+  border-style: solid;
+  border-color: transparent #000 transparent transparent;
+  bottom: -12%;
+  right: 56%;
+  z-index: 1; }
+
+.h::after {
+  content: "";
+  position: absolute;
+  border-width: 60px 60px 60px 60px;
+  border-style: solid;
+  border-color: transparent #000 transparent transparent;
+  bottom: -12%;
+  left: 78%;
+  z-index: 1; }
+
+/*# sourceMappingURL=testimonial.css.map */

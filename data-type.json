@@ -1,0 +1,14 @@
+{
+    "username": "elzeron",
+    "country": "egypt",
+    "skills": ["HTML", "CSS", "JS"],
+    "adresses": {
+        "Egypt": "assiut",
+        "KSA": "Elrehab",
+        "USA": "NY",
+        "germany": ["One", "Two", "Three"]
+    },
+    "age": 21,
+    "working": true,
+    "identity": null
+}

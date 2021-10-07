@@ -1,0 +1,105 @@
+.use{
+    background-color: #fff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    p:first-child{
+        color: var(--main-color);
+        font-size: 45px;
+        font-weight: bold;
+        text-align: center;
+    }
+    h1{
+        font-weight: bold;
+        font-size: 55px;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    .use-container{
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        align-items: center;
+        .use-text{
+            flex: 1;
+            h4{
+                font-size: 27px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                letter-spacing: 2.5px;
+                line-height: 1.2em;
+                
+            }
+            p{
+                color: #666;
+                line-height: 1.7em;
+
+            }
+            .btn-container{
+                display: flex;
+                flex-direction: row;
+                margin-top: 30px;
+            }
+            .btn-google{
+                background-color: #000;
+                padding: 10px 20px;
+                text-align: center;
+                border-radius: 30px;
+                display: flex;
+                color: #fff;
+                justify-items: center;
+                align-items: center;
+                cursor: pointer;
+                transition: all .25s ease;
+                .btn-text{
+                    margin-left: 10px;
+                    span{
+                        display: block;
+                        letter-spacing: 1.7px;
+                        font-size: 12px;
+                        margin: 2px 0px;
+                    }
+                    h5{
+                        font-size: 15px;
+                        
+                    }
+                }
+            }
+            .btn-apple{
+                background-color: #000;
+                padding: 10px 20px;
+                border-radius: 30px;
+                display: flex;
+                color: #fff;
+                justify-items: center;
+                align-items: center;
+                cursor: pointer;
+                transition: all .25s ease;
+                margin-left: 20px;
+                .app-text{
+                    margin-left: 20px;
+                    span{
+                        display: block;
+                        letter-spacing: 1.7px;
+                        font-size: 12px;
+                        margin: 2px 0px;
+                    }
+                    h5{
+                        font-size: 15px;
+                        
+                    }
+                }
+            }
+        }
+        .img-container{
+            flex: 1;
+            text-align: center;
+        }
+    }
+}
+
+
+.btn-google:hover,
+.btn-apple:hover{
+    background-color: #fff !important;
+    color: #000 !important;
+}

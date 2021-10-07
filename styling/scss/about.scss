@@ -1,0 +1,89 @@
+.about{
+    background-color: var(--main-color);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    width: 100%;
+    .about-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 20px;
+        justify-items: center;
+        .about-text{
+            padding-right: 20px;
+            width: 80%;
+            h2{
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            h1{
+                font-weight: bold;
+                font-size: 35px;
+                margin: 20px 0px;
+            }
+            p{
+                line-height: 25px;
+                margin-bottom: 15px;
+            }
+            
+        }
+        .form-container{
+            width: 50%;
+            background-color: #fff;
+            label{
+                display: block;
+                background-color: #000;
+                color: #fff;
+                width: 100%;
+                padding: 10px;
+                span{
+                    color: var(--main-color);
+                }
+            }
+            .inp-container{
+                padding: 20px 20px;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                grid-gap: 30px;
+                input{
+                    color: #000;
+                    border-width: 0px 0px 1px 0px;
+                    border-color: #000;
+                    border-style: solid;
+                    outline: none;
+                    padding: 5px;
+                }
+
+            }
+            select{
+                width: 86%;
+                padding: 5px;
+                border-width: 0px 0px 1px 0px;
+                border-color: #000;
+                border-style: solid;
+                margin: 0px 20px;
+                outline: none;
+                position: relative;
+            }
+            
+            .btn-submit{
+                width: 85%;
+                margin: 30px 20px;
+                text-align: center;
+                padding: 10px;
+                color: #fff;
+                background-color: #000;
+                transition: all .25s linear;
+                cursor: pointer;
+                border: none;
+                border-radius: 5px;
+                font-weight: bold;
+
+            }
+            .btn-submit:hover{
+                background-color: var(--main-color);
+                color: #000;
+            }
+        }
+    }
+}
+
