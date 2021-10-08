@@ -11,10 +11,33 @@
         <link rel="stylesheet" href="dist/css/main.css">
         <title>Document</title>
 
+        <style>
+            .btn-up{
+                position: fixed;
+                bottom: 5%;
+                right: 5%;
+                padding: 10px;
+                background-color: rgb(255, 174, 174);
+                cursor: pointer;
+                transition: all .25s ease;
+                display: none;
+                z-index: 999;
+            }
+            .btn-up:hover{
+                color: #fff;
+                background-color: rgb(255, 0, 0);
+                z-index: 2000;
+            }
+
+        </style>
     </head>
     <body>
         <!--start main-->
-
+        <div class="btn-up">
+            <span>
+                <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
+            </span>
+        </div>
         <div class="over-page">
             <span>&times;</span>
             <h1>Welcome to CapHUb</h1>
@@ -32,7 +55,7 @@
 
         <!--end main-->
         <!--Start Header-->
-        <header class="head-section">
+        <header class="head-section home">
             <div class="header-overlay"></div>
             <div class="nav-container">
                 <div class="brand-container">
@@ -41,12 +64,12 @@
                 </div>
                 <div class="ul-container">
                     <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">FEATURES</a></li>
-                        <li><a href="">BLOG</a></li>
-                        <li><a href="">ORDER NOW</a></li>
-                        <li><a href="">CONTACS</a></li>
+                        <li data-section=".home"><a href="">HOME</a></li>
+                        <li data-section=".about"><a href="">ABOUT</a></li>
+                        <li data-section=".price"><a href="">FEATURES</a></li>
+                        <li data-section=".skill"><a href="">BLOG</a></li>
+                        <li data-section=".use"><a href="">ORDER NOW</a></li>
+                        <li data-section=".contact"><a href="">CONTACS</a></li>
                     </ul>
                     <div class="menu-btn">
                         <span></span>

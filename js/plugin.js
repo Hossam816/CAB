@@ -2,13 +2,32 @@ $(function(){
     "use strict";
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
+        //change the bg of nav bar
         if( scroll > 0){
             $(".nav-container").addClass("background-show")
             
         }else{
             $(".nav-container").removeClass("background-show")
         }
+        
+        //scroll to top button
+        if(scroll >= 900){
+
+            $(".btn-up").fadeIn(1000)
+
+        }else{
+            $(".btn-up").fadeOut(500)
+        }
     })
+
+    //click on btn-up 
+    $(".btn-up").on("click", function(e){
+        e.preventDefault();
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000)
+    })
+
 
     $(".btn-submit").on("click", function(e){
         e.preventDefault();
@@ -30,5 +49,41 @@ $(function(){
     $(".menu-btn").on("click", function(){
         $(".ul-container ul").toggleClass("show-nav")
     })
+
+
+
 })
 
+var allLinks = document.querySelectorAll(".ul-container ul li");
+
+function scrolling(links){
+    links.forEach(link => {
+        link.addEventListener('click', (e)=>{
+            e.preventDefault();
+            document.querySelector(e.target.dataset.section).scrollIntoView({
+                behavior: 'smooth'
+            })
+        })
+    })
+}
+scrolling(allLinks)
+
+var toggleMenu = document.querySelector('.menu-btn'),
+    ulLinks = document.querySelector(".ul-container ul");
+
+toggleMenu.onclick = function(e){
+    e.stopPropagation();
+    document.querySelector(".ul-container").classList.toggle("show-nav")
+}
+document.addEventListener('click', (e) => {
+    if(e.target !== toggleMenu && e.target !== ulLinks){
+
+        if(ulLinks.classList.contains("show-nav")){
+
+            ulLinks.classList.toggle("show-nav")
+        }else{console.log("salute")}
+    }
+})
+ulLinks.onclick = function (e){
+    e.stopPropagation()
+}
