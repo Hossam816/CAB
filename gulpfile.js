@@ -6,7 +6,7 @@ var gulp = require("gulp"),
 gulp.task('css', function(){
     return gulp.src("styling/scss/*.scss")
             .pipe(sass())
-            .pipe(prefix('last 4 versions'))
+            .pipe(prefix('last 2 versions'))
             .pipe(concat("main.css"))
             .pipe(gulp.dest('dist/css'))
             .pipe(livereload())

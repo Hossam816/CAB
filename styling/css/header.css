@@ -18,15 +18,14 @@ header {
     display: flex;
     position: fixed;
     padding: 10px;
-    width: 90%;
+    width: 100%;
     padding-left: 20px;
     padding-right: 30px;
     transition: all .9s ease; }
     header .nav-container .brand-container {
-      width: 300px;
+      width: 200px;
       padding: 15px;
-      color: #fff;
-      margin-left: 50px; }
+      color: #fff; }
       header .nav-container .brand-container .h-brand {
         color: #fff; }
         header .nav-container .brand-container .h-brand span {
@@ -69,7 +68,8 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
-    text-align: center; }
+    text-align: center;
+    width: 50%; }
     header .header-text p:first-child {
       letter-spacing: 2.5px;
       color: var(--main-color);
@@ -79,14 +79,14 @@ header {
       color: #fff; }
     header .header-text p:nth-child(3) {
       letter-spacing: 4.5px;
-      font-size: 25px;
+      font-size: 35px;
       color: #fff; }
   header img {
     position: absolute;
     bottom: -5%;
     z-index: 5;
     left: 50%;
-    transform: translate(-50%, 12%);
+    transform: translate(-50%, 20%);
     width: 30%;
     pointer-events: none; }
 

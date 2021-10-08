@@ -73,7 +73,6 @@
   color: #fff;
   background-color: #000;
   -webkit-transition: all 0.25s linear;
-  -o-transition: all 0.25s linear;
   transition: all 0.25s linear;
   cursor: pointer;
   border: none;
@@ -125,6 +124,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .contact .contact-container .contact-info {
   padding: 15px;
@@ -196,18 +198,16 @@ header .nav-container {
   display: flex;
   position: fixed;
   padding: 10px;
-  width: 90%;
+  width: 100%;
   padding-left: 20px;
   padding-right: 30px;
   -webkit-transition: all 0.9s ease;
-  -o-transition: all 0.9s ease;
   transition: all 0.9s ease;
 }
 header .nav-container .brand-container {
-  width: 300px;
+  width: 200px;
   padding: 15px;
   color: #fff;
-  margin-left: 50px;
 }
 header .nav-container .brand-container .h-brand {
   color: #fff;
@@ -244,7 +244,6 @@ header .nav-container .ul-container ul li {
   cursor: pointer;
   padding: 10px;
   -webkit-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
   border-radius: 5px;
 }
@@ -252,7 +251,6 @@ header .nav-container .ul-container ul li a {
   border-radius: 5px;
   border: none;
   -webkit-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
   pointer-events: none;
   color: #fff;
@@ -269,10 +267,10 @@ header .header-text {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 5;
   text-align: center;
+  width: 50%;
 }
 header .header-text p:first-child {
   letter-spacing: 2.5px;
@@ -285,7 +283,7 @@ header .header-text p:nth-child(2) {
 }
 header .header-text p:nth-child(3) {
   letter-spacing: 4.5px;
-  font-size: 25px;
+  font-size: 35px;
   color: #fff;
 }
 header img {
@@ -293,9 +291,8 @@ header img {
   bottom: -5%;
   z-index: 5;
   left: 50%;
-  -webkit-transform: translate(-50%, 12%);
-      -ms-transform: translate(-50%, 12%);
-          transform: translate(-50%, 12%);
+  -webkit-transform: translate(-50%, 20%);
+          transform: translate(-50%, 20%);
   width: 30%;
   pointer-events: none;
 }
@@ -332,7 +329,6 @@ header img {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 .over-page .overpage-container p {
@@ -383,7 +379,6 @@ header img {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   -webkit-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 .price .price-contaienr .price-1 img {
@@ -424,7 +419,6 @@ header img {
   font-size: 35px;
   opacity: 0;
   -webkit-transition: all 0.95s ease;
-  -o-transition: all 0.95s ease;
   transition: all 0.95s ease;
 }
 
@@ -502,6 +496,7 @@ header img {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
+  margin: 20px;
 }
 .skill .skill-container .skills span {
   border-radius: 50%;
@@ -696,7 +691,6 @@ header img {
           align-items: center;
   cursor: pointer;
   -webkit-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 .use .use-container .use-text .btn-google .btn-text {
@@ -725,7 +719,6 @@ header img {
           align-items: center;
   cursor: pointer;
   -webkit-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
   margin-left: 20px;
 }
