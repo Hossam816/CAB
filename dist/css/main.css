@@ -242,19 +242,27 @@ header .nav-container .ul-container ul li {
   display: inline-block;
   margin-left: 15px;
   cursor: pointer;
-}
-header .nav-container .ul-container ul li a {
-  padding: 5px;
-  border-radius: 5px;
-  border: none;
-  color: #fff;
+  padding: 10px;
   -webkit-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
+  border-radius: 5px;
 }
-header .nav-container .ul-container ul li a:hover {
-  background-color: var(--main-color);
+header .nav-container .ul-container ul li a {
+  border-radius: 5px;
+  border: none;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+  color: #fff;
+}
+header .nav-container .ul-container ul li:hover a {
   color: #000;
+}
+header .nav-container .ul-container ul li:hover {
+  background-color: var(--main-color);
+  color: #000 !important;
 }
 header .header-text {
   position: absolute;

@@ -48,16 +48,21 @@ header {
         header .nav-container .ul-container ul li {
           display: inline-block;
           margin-left: 15px;
-          cursor: pointer; }
+          cursor: pointer;
+          padding: 10px;
+          transition: all .25s ease;
+          border-radius: 5px; }
           header .nav-container .ul-container ul li a {
-            padding: 5px;
             border-radius: 5px;
             border: none;
-            color: #fff;
-            transition: all .25s ease; }
-          header .nav-container .ul-container ul li a:hover {
-            background-color: var(--main-color);
-            color: #000; }
+            transition: all .25s ease;
+            pointer-events: none;
+            color: #fff; }
+        header .nav-container .ul-container ul li:hover a {
+          color: #000; }
+        header .nav-container .ul-container ul li:hover {
+          background-color: var(--main-color);
+          color: #000 !important; }
   header .header-text {
     position: absolute;
     top: 50%;
